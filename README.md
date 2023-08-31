@@ -39,9 +39,7 @@ forge test
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Aave Atoken Client | An extension of Aave V3's AToken contract which makes it possible for AToken  holders to still vote on governance proposals                                                                    | [ATokenFlexVoting](./src/ATokenFlexVoting.sol)     |
 | Comet Client       | This is an extension of Compound V3's Comet contract which makes it possible for Comet token holders to still vote on governance proposals.                                                    | [CometFlexVotingClient](./src/CometFlexVoting.sol) |
-| Flex Voting Client | This is an extension of Compound V3's Comet contract which makes it
-This is an abstract contract to make it easy to build clients for governance systems that are "flexible voting" governors. | [FlexVotingClient.sol](./src/FlexVotingClient.sol) |
-|                    |                                                                   
+| Flex Voting Client |This is an abstract contract to make it easy to build clients for governance systems that are "flexible voting" governors. | [FlexVotingClient.sol](./src/FlexVotingClient.sol) |
 
 ## License
 
