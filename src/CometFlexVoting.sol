@@ -62,6 +62,7 @@ contract CometFlexVoting is Comet, FlexVotingClient {
   //===========================================================================
   //
   // This function is called any time the underlying balance is changed.
+  // scopelint: disable-next-line
   function updateBasePrincipal(address _account, UserBasic memory _userBasic, int104 _principalNew)
     internal
     override
