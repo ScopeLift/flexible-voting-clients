@@ -4,8 +4,7 @@ pragma solidity >=0.8.10;
 import {Comet} from "comet/Comet.sol";
 import {CometConfiguration} from "comet/CometConfiguration.sol";
 import {Checkpoints} from "@openzeppelin/contracts/utils/Checkpoints.sol";
-
-import {FlexVotingClient} from "src/FlexVotingClient.sol";
+import {FlexVotingClient} from "flexible-voting/src/FlexVotingClient.sol";
 
 /// @notice This is an extension of Compound V3's Comet contract which makes it
 /// possible for Comet token holders to still vote on governance proposals. This
