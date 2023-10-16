@@ -13,7 +13,7 @@ import { ConfiguratorInputTypes } from 'aave-v3-core/contracts/protocol/librarie
 import { DataTypes } from 'aave-v3-core/contracts/protocol/libraries/types/DataTypes.sol';
 import { IAToken } from "aave-v3-core/contracts/interfaces/IAToken.sol";
 import { IPool } from 'aave-v3-core/contracts/interfaces/IPool.sol';
-import { PoolConfigurator } from 'aave-v3-core/contracts/protocol/pool/PoolConfigurator.sol';
+import { IPoolConfigurator } from 'aave-v3-core/contracts/interfaces/IPoolConfigurator.sol';
 
 import { MockATokenFlexVoting } from "test/MockATokenFlexVoting.sol";
 import { FractionalGovernor } from "test/FractionalGovernor.sol";
@@ -110,8 +110,8 @@ contract AaveAtokenForkTest is Test {
     // );
 
     // Address from: pool.ADDRESSES_PROVIDER().getPoolConfigurator();
-    PoolConfigurator _poolConfigurator =
-      PoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
+    IPoolConfigurator _poolConfigurator =
+      IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
     // deploy the aGOV token
     AToken _aTokenImplementation = new MockATokenFlexVoting(pool, address(governor));
