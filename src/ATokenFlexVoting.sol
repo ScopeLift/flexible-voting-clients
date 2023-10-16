@@ -7,8 +7,7 @@ import {MintableIncentivizedERC20} from "aave-v3-core/contracts/protocol/tokeniz
 import {IAaveIncentivesController} from "aave-v3-core/contracts/interfaces/IAaveIncentivesController.sol";
 import {IPool} from "aave-v3-core/contracts/interfaces/IPool.sol";
 import {Checkpoints} from "@openzeppelin/contracts/utils/Checkpoints.sol";
-
-import {FlexVotingClient} from "src/FlexVotingClient.sol";
+import {FlexVotingClient} from "flexible-voting/src/FlexVotingClient.sol";
 // forgefmt: disable-end
 
 /// @notice This is an extension of Aave V3's AToken contract which makes it possible for AToken
